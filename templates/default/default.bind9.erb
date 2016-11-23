@@ -1,0 +1,3 @@
+# installed by chef recipe gnops_bind9
+RESOLVCONF=no
+OPTIONS=<% if @ipv4_only -%>"-u bind -4"<% else -%>"-u bind"<% end -%>
